@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5FAF11B52EF60B6B00CF307C /* MWDATCamera in Frameworks */ = {isa = PBXBuildFile; productRef = 5FAF11B42EF60B6B00CF307C /* MWDATCamera */; };
+		5FAF11B72EF60B6B00CF307C /* MWDATCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5FAF11B62EF60B6B00CF307C /* MWDATCore */; };
+		5FAF11B92EF60B6B00CF307C /* MWDATMockDevice in Frameworks */ = {isa = PBXBuildFile; productRef = 5FAF11B82EF60B6B00CF307C /* MWDATMockDevice */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5FAF11892EF3152B00CF307C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FAF11B52EF60B6B00CF307C /* MWDATCamera in Frameworks */,
+				5FAF11B92EF60B6B00CF307C /* MWDATMockDevice in Frameworks */,
+				5FAF11B72EF60B6B00CF307C /* MWDATCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = QRScanPlay;
 			packageProductDependencies = (
+				5FAF11B42EF60B6B00CF307C /* MWDATCamera */,
+				5FAF11B62EF60B6B00CF307C /* MWDATCore */,
+				5FAF11B82EF60B6B00CF307C /* MWDATMockDevice */,
 			);
 			productName = QRScanPlay;
 			productReference = 5FAF11792EF3152A00CF307C /* QRScanPlay.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 5FAF11702EF3152A00CF307C;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5FAF11B32EF60B6B00CF307C /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios-private" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5FAF117A2EF3152A00CF307C /* Products */;
 			projectDirPath = "";
@@ -390,10 +405,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = 98AS962WTJ;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -414,13 +431,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
@@ -432,10 +450,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_APP_SANDBOX = YES;
+				DEVELOPMENT_TEAM = 98AS962WTJ;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -456,13 +476,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -605,6 +626,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FAF11B32EF60B6B00CF307C /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios-private" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebookincubator/meta-wearables-dat-ios-private";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FAF11B42EF60B6B00CF307C /* MWDATCamera */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FAF11B32EF60B6B00CF307C /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios-private" */;
+			productName = MWDATCamera;
+		};
+		5FAF11B62EF60B6B00CF307C /* MWDATCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FAF11B32EF60B6B00CF307C /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios-private" */;
+			productName = MWDATCore;
+		};
+		5FAF11B82EF60B6B00CF307C /* MWDATMockDevice */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FAF11B32EF60B6B00CF307C /* XCRemoteSwiftPackageReference "meta-wearables-dat-ios-private" */;
+			productName = MWDATMockDevice;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5FAF11712EF3152A00CF307C /* Project object */;
 }
